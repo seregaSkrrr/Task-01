@@ -1,0 +1,17 @@
+﻿  AIPlayer.cpp
+  Car.cpp
+  DZ5.cpp
+I:\СТУДЕНТЫ\П22\Serega_skrrr\DZ5\DZ5\DZ5.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  HumanPlayer.cpp
+  LADACar.cpp
+  Nuclear.cpp
+  Player.cpp
+  RacingGame.cpp
+I:\СТУДЕНТЫ\П22\Serega_skrrr\DZ5\DZ5\RacingGame.cpp(9,25): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+I:\СТУДЕНТЫ\П22\Serega_skrrr\DZ5\DZ5\RacingGame.cpp(11,25): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+I:\СТУДЕНТЫ\П22\Serega_skrrr\DZ5\DZ5\RacingGame.cpp(46,28): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  GASelCar.cpp
+  Thermonuclear.cpp
+  Создание кода...
+I:\СТУДЕНТЫ\П22\Serega_skrrr\DZ5\DZ5\RacingGame.cpp(15): warning C4715: RacingGame::GetNextRoadMaximumSpeed: значение возвращается не при всех путях выполнения
+  DZ5.vcxproj -> I:\СТУДЕНТЫ\П22\Serega_skrrr\DZ5\x64\Debug\DZ5.exe
