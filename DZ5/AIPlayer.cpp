@@ -21,20 +21,16 @@ AIPlayer::AIPlayer(): Player(AIPlayer::SelectCar()) {
 
 }
 
-void AIPlayer::SelectChassis(){
-	int IsChargeChassisNeded = randomizer() % 2;
-
-
-	if (IsChargeChassisNeded == 1) {
+void AIPlayer::FinishTurn(){
+	int ChangeActionID = randomizer() % 3;
+	switch (ChangeActionID){
+	case 1:
 		GetPlayerCar()->ChangeChassis();
-	}
-}
-
-void AIPlayer::SelectFuel() {
-	int IsChargeFuelNeded = randomizer() % 2;
-
-
-	if (IsChargeFuelNeded == 1) {
+		break;
+	case 2:
 		GetPlayerCar()->ChangeFuel();
+		break;
+	default:
+		break;
 	}
 }

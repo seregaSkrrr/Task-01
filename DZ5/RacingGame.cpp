@@ -57,16 +57,47 @@ void RacingGame::StartGame() {
 	ShowRoadTypeDescription();
 
 	for (int counter = 0; counter < 10; counter++) {
-		cout << "Машинка человека " << endl;
-		players[0]->GetPlayerCar()->ShowCarInfo();
-		cout << "Машинка компьютера " << endl;
-		players[1]->GetPlayerCar()->ShowCarInfo();
+		MoveCars(players, GetNextRoadMaximumSpeed());
+		ShowTurn(counter);
+		ShowCars();
 
-		FinishTurn(players, GetNextRoadMaximumSpeed());
+		for (int counter = 0; counter < 2; counter++) {
+			players[counter]->FinishTurn();
+		}
 	}
+
+	GetFinisher();
 }
 
-void RacingGame::FinishTurn(Player** _players, int NextRoadTypeMaxSpeed) {
+void RacingGame::GetFinisher()
+{
+
+	cout << "[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]" << endl;
+	cout << "Гонка окончена!" << endl;
+	int humanplayerdistance = players[0]->GetPlayerCar()->GetDistance();
+	int aiplayerdistance = players[1]->GetPlayerCar()->GetDistance();
+	cout << "Игрок Человек " << ((humanplayerdistance > aiplayerdistance) ? "выиграл" : "проиграл") << endl;
+	cout << "Игрок Компутер " << ((humanplayerdistance > aiplayerdistance) ? "проиграл" : "выиграл") << endl;
+	cout << "[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]" << endl;
+}
+
+void RacingGame::ShowCars()
+{
+	cout << "Машинка игрока" << endl;
+	players[0]->GetPlayerCar()->ShowCarInfo();
+	cout << "Машинка компьютера " << endl;
+	players[1]->GetPlayerCar()->ShowCarInfo();
+}
+
+void RacingGame::ShowTurn(int counter)
+{
+	cout << "[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]" << endl;
+	cout << "Ход №" << counter << endl;
+	cout << "[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]" << endl;
+
+}
+
+void RacingGame::MoveCars(Player** _players, int NextRoadTypeMaxSpeed) {
 	for (int counter = 0; counter < 2; counter++) {
 		_players[counter]->GetPlayerCar()->Move(NextRoadTypeMaxSpeed);
 	}

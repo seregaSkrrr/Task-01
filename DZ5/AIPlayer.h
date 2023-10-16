@@ -8,8 +8,7 @@
 class AIPlayer : public Player{
 public:
 	AIPlayer();
-	void SelectChassis() override;
-	void SelectFuel() override;
+	void FinishTurn() override;
 private:
 	static Car* SelectCar();
 	random_device randomizer;

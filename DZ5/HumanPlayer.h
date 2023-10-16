@@ -9,6 +9,8 @@
 class HumanPlayer : public Player{
 public:
 	HumanPlayer();
+	void FinishTurn() override;
 private:
 	static Car* SelectCar();
+	random_device randomizer;
 };

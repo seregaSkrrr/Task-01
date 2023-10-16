@@ -11,6 +11,7 @@ void Car::ShowCarInfo() {
 	cout << "Модификатор максимального yскорения псоле половины скорости " << _Fuel->GetHighAccelerationModifier() << endl;
 	cout << "Нынешняя скорость " << _Speed << endl;
 	cout << "Нынешнее ускорение " << _Acceleration << endl;
+	cout << "Дистанция " << _Distance << endl;
 	cout << "[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]" << endl << endl;
 
 }
@@ -56,7 +57,7 @@ void Car::ChangeChassis(){
 }
 
 void Car::ChangeFuel() {
-	int NextFuelID = _Random() % 2;
+	int NextFuelID = _Random() % 4;
 	switch (NextFuelID)
 	{
 	case 1:
@@ -65,9 +66,20 @@ void Car::ChangeFuel() {
 	case 2:
 		_Fuel = new Diesel();
 		break;
+	case 3:
+		_Fuel = new Thermonuclear();
+		break;
+	case 4:
+		_Fuel = new Nuclear();
+		break;
 	default:
 		break;
 	}
+}
+
+int Car::GetDistance()
+{
+	return _Distance;
 }
 
 Car::Car(string model, string number, Chassis* chassis, Fuel* fuel) {

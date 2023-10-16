@@ -16,6 +16,6 @@ int main() {
 	RacingGame _RacingGame;
 
 	_RacingGame.StartGame();
-
+	
 	return 0;
 }

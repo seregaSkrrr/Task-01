@@ -11,8 +11,7 @@ private:
 	Car* _PlayerCar;
 public:
 	Car *GetPlayerCar() const;
-	virtual void SelectChassis() = 0;
-	virtual void SelectFuel() = 0;
+	virtual void FinishTurn() = 0;
 protected:
 	Player(Car* playerCar);
 };

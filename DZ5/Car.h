@@ -17,6 +17,7 @@ public:
 	void Move(int RoadTypeMaxSpeed);
 	void ChangeChassis();
 	void ChangeFuel();
+	int GetDistance();
 protected:
 	Car(string Model, string Number, Chassis* chassis, Fuel* fuel);
 	static string GenerateNumber();
