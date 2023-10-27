@@ -1,0 +1,52 @@
+﻿  DZ1.cpp
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(9,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(96,45): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(95,19): message : во время компиляции функции-члена класс шаблон "Matrix<float> Matrix<float>::operator *(const Matrix<float> &) const"
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(60,12): message : см. первую ссылку на "Matrix<float>::operator *" в "main"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(88,1): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Matrix<float>"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(126,2): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Matrix<T>"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(96,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(92,45): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(91,19): message : во время компиляции функции-члена класс шаблон "Matrix<float> Matrix<float>::operator -(const Matrix<float> &) const"
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(59,12): message : см. первую ссылку на "Matrix<float>::operator -" в "main"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(92,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(88,45): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(86,19): message : во время компиляции функции-члена класс шаблон "Matrix<float> Matrix<float>::operator +(const Matrix<float> &)"
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(58,12): message : см. первую ссылку на "Matrix<float>::operator +" в "main"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(88,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(78,36): warning C4244: =: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(72,9): message : во время компиляции функции-члена класс шаблон "int Matrix<float>::Min(void)"
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(47,55): message : см. первую ссылку на "Matrix<float>::Min" в "main"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(64,36): warning C4244: =: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(58,9): message : во время компиляции функции-члена класс шаблон "int Matrix<float>::Max(void)"
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(46,72): message : см. первую ссылку на "Matrix<float>::Max" в "main"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(40,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(39,10): message : во время компиляции функции-члена класс шаблон "void Matrix<float>::fillRandomly(void)"
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(50,24): message : см. первую ссылку на "Matrix<float>::fillRandomly" в "main"
+C:\Users\kravt\source\repos\DZ1\DZ1\Matrix.h(43,37): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\kravt\source\repos\DZ1\DZ1\Functions.h(40,20): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(23,5): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Sort<int*>(T,size_t)"
+          with
+          [
+              T=int *
+          ]
+C:\Users\kravt\source\repos\DZ1\DZ1\Functions.h(52,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\kravt\source\repos\DZ1\DZ1\DZ1.cpp(27,5): message : выполняется компиляция ссылки на экземпляр шаблон функции "void BinarySearch<int*>(int,T,size_t)"
+          with
+          [
+              T=int *
+          ]
+C:\Users\kravt\source\repos\DZ1\DZ1\Functions.h(55,33): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  DZ1.vcxproj -> C:\Users\kravt\source\repos\DZ1\x64\Debug\DZ1.exe
